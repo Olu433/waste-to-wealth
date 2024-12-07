@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste2Wealth</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Waste2Wealth</h1>
+    <p>Turn your waste into wealth!</p>
+  </header>
+
+  <main>
+    <section id="register-section">
+      <h2>Register</h2>
+      <form id="register-form">
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Register</button>
+      </form>
+      <div id="register-response"></div>
+    </section>
+
+    <section id="deposit-section">
+      <h2>Log Waste Deposit</h2>
+      <form id="deposit-form">
+        <input type="number" id="weight" placeholder="Enter waste weight (kg)" required>
+        <select id="type">
+          <option value="plastic">Plastic</option>
+          <option value="glass">Glass</option>
+          <option value="metal">Metal</option>
+        </select>
+        <button type="submit">Submit Deposit</button>
+      </form>
+      <div id="deposit-response"></div>
+    </section>
+
+    <section id="map-section">
+      <h2>Find Recycling Centers</h2>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
